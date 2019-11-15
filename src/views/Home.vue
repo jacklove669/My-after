@@ -1,18 +1,34 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+	<div class="q-wrap ">
+		<qheader>
+		</qheader>     
+		<qcenter>
+		</qcenter>
+	</div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import qheader from '@/components/qheader.vue'
+import qcenter from '@/components/qcenter.vue'
 
 export default {
-  name: 'home',
-  components: {
-    HelloWorld
-  }
+	name: 'q-wrap',
+	components: {
+		qheader,
+		qcenter
+	}
 }
 </script>
+<style scoped>
+	a{text-decoration:none}
+	a:hover{
+		color: #A9A9A9;
+	}
+	html{
+		font-size: 62.5%;
+	}
+	.q-wrap{
+		height: 50px;
+	}
+</style>
